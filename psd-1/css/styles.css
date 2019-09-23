@@ -251,8 +251,6 @@ body {
 }
 
 #meuble2 .informations__meubles {
-    width: 285px;
-    height: 600px;
     color: white;
     margin-left: 7%;
 }
@@ -406,16 +404,18 @@ h1 {
     font-size: 1.5rem;
 }
 
-.partners div {
+.partners {
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns : 1fr repeat(6,2fr) 1fr;
 }
+
 
 .fleche img {
     /*Gardes les proportions*/
-    width: 10%;
+    width: 1%;
+    height: auto;
     -webkit-filter: invert(50%);
 }
 
