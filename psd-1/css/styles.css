@@ -184,11 +184,14 @@ body {
     display: grid;
     grid-auto-rows: 291px;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-areas: "meuble1 meuble2 meuble3" "meuble1 meuble2 meuble4";
+    grid-template-areas: 
+        "meuble1 meuble2 meuble3" 
+        "meuble1 meuble2 meuble4";
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
 
+/*Camille*/
 .produit__partie__1 img {
     position: absolute;
     z-index: 0;
@@ -276,18 +279,6 @@ body {
     margin-top: 130%;
 }
 
-#meuble5 {
-    grid-area: meuble5;
-    background-color: #c6e6a1;
-}
-
-#meubl6 {
-    grid-area: meuble6;
-}
-
-#meuble7 {
-    grid-area: meuble7;
-}
 
 .meuble1__img {
     width: 150%;
@@ -310,9 +301,8 @@ body {
     margin-left: 35px;
 }
 
-#meuble5 img {
-    width: 150%;
-}
+/*Camille*/
+
 
 .products-grid .produit__partie__2 div {
     position: relative;
@@ -325,6 +315,23 @@ body {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     margin-top: 20px;
+}
+
+#meuble5 {
+    grid-area: meuble5;
+    background-color: #c6e6a1;
+}
+
+#meubl6 {
+    grid-area: meuble6;
+}
+
+#meuble7 {
+    grid-area: meuble7;
+}
+
+#meuble5 img {
+    width: 150%;
 }
 
 
