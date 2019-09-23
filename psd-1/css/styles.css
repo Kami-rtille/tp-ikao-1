@@ -52,7 +52,10 @@ body {
 .pre-header div {
     justify-content: space-between;
 }
+
+
 /*---------COORDONNEE et COMPTE-------------------------------*/
+
 .pre-header__coords div,
 .pre-header__account {
     padding: 15px;
@@ -114,13 +117,16 @@ body {
     flex-grow: 1;
     margin-left: 80px;
 }
+
+
 /*--------------------RECHERCHE--------------------*/
+
 .header__icones {
     /*Enfant*/
     flex-grow: 0.5;
 }
 
-.recherche{
+.recherche {
     background: url("../icones/icones-png/magnifying-glass.png") no-repeat;
     background-size: contain;
     width: 25px;
@@ -138,7 +144,9 @@ body {
 .main-header__menu a {
     margin: 0px 15px 0px 15px;
 }
- /* ------------PANIER-----------*/
+
+
+/* ------------PANIER-----------*/
 
 .panier {
     display: flex;
@@ -171,34 +179,43 @@ body {
     margin-top: 3.5px;
 }
 
-
+/*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------Produits--------------------------*/
+.meuble {
+    position: absolute;
+    z-index: 0;
+}
 
+.informations__meubles {
+    z-index: 1;
+    margin-top: 7%;
+    margin-left: 10%;
+}
 
-.products-grid{
+.acheter {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/*--------Produit Grid 1--------*/
+
+.produit__partie__1 div {
+    position: relative;
     overflow: hidden;
 }
 
 .products-grid .produit__partie__1 {
-    position: relative;
     /*Grid*/
     display: grid;
     grid-auto-rows: 291px;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-areas: 
-        "meuble1 meuble2 meuble3" 
-        "meuble1 meuble2 meuble4";
+    grid-template-areas: "meuble1 meuble2 meuble3" "meuble1 meuble2 meuble4";
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
 
-/*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
-
-.produit__partie__1 img {
-    position: absolute;
-    z-index: 0;
-}
 /*DIV GRID ---------------*/
+
 #meuble1 {
     grid-area: meuble1;
 }
@@ -216,30 +233,24 @@ body {
     background-color: #f8f8f8;
 }
 
-.informations__meubles {
-    z-index: 1;
-    margin-top: 7%;
-    margin-left: 10%;
+/*------------MEUBLE 1 DESIGN TEXTE ----------*/
+#meuble1 img {
+    margin-left: -35px;
+    margin-top: -20px;
 }
 
-#meuble1 a{
+#meuble1 a {
     text-decoration: none;
     color: white;
 }
 
 /*------------MEUBLE 2 DESIGN TEXTE ----------*/
 
-
-.acheter{
-    text-transform: uppercase;
-}
-#meuble2 img{
-    left:-50%;
+#meuble2 img {
+    left: -50%;
 }
 
 #meuble2 .informations__meubles {
-    border: solid 1px red;
-    display: block;
     width: 285px;
     height: 600px;
     color: white;
@@ -252,8 +263,8 @@ body {
     padding: 5px;
     border-radius: 60%;
     border: solid 1px black;
-     top:14.7%;
-     left:23%;
+    top: 14.7%;
+    left: 23%;
 }
 
 #meuble2 .price {
@@ -261,42 +272,46 @@ body {
     text-align: center;
 }
 
-#meuble2 #bleu{
-     border-radius: 100%;
+#meuble2 #bleu {
+    border-radius: 100%;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     background: #62c5de;
     height: 130px;
     width: 130px;
-    top:-30%;
-    left:35%;
+    top: -30%;
+    left: 35%;
 }
 
-#meuble2 #entete{
+#meuble2 #entete {
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-weight:500;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    font-size:12px;
-    height:30px;
+    font-size: 12px;
+    height: 30px;
 }
 
-#meuble2 h3{
-    width:150px;
-    height:60px;
+#meuble2 h3 {
+    width: 150px;
+    height: 60px;
 }
-
-#meuble2 .acheter {
-    font-size:12px;
-}
-
 
 
 /*------------MEUBLE 3 DESIGN TEXTE ----------*/
+#meuble3 img {
+    width: 130%;
+    margin-top: -25px;
+}
+
 
 
 /*------------MEUBLE 4 DESIGN TEXTE ----------*/
-
+#meuble4 img {
+    width: 125%;
+    margin-top: 70px;
+    margin-left: 35px;
+}
 
 /*---------------PRIX------------------*/
 
@@ -313,56 +328,32 @@ body {
     margin-top: 130%;
 }
 
+/*--------Produit Grid 2--------*/
 
-.meuble1__img {
-    width:70%;
-    margin-left: -35px;
-    margin-top: -20px;
-}
-
-.meuble2__img img {
-    
-}
-
-.meuble3__img {
-    width: 130%;
-    margin-top: -25px;
-}
-
-.meuble4__img {
-    width: 125%;
-    margin-top: 70px;
-    margin-left: 35px;
-}
-
-/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*--------Produit Grid 1--------*/
 .produit__partie__2 {
     margin-top: 20px;
 }
-.products-grid .produit__partie__2 div {
-    overflow: hidden;
-}
-.products-grid .produit__partie__2 {
+
+.produit__partie__2 div {
     position: relative;
     overflow: hidden;
-
-    /*Grid*/
-    display: grid;
-    grid-template-rows : 300px 400px;
-    grid-template-columns: 1.7fr 3fr; /*Taille des colonnes*/
-    grid-template-areas: "meuble5 meuble7" "meuble6 meuble7";
-    grid-column-gap: 20px; /*Espace entre colonne*/
-    grid-row-gap: 20px; /*Espace entre ligne*/
 }
 
-.produit__partie__2 img {
-    position: absolute;
-    z-index: 0;
+.produit__partie__2 {
+    /*Grid*/
+    display: grid;
+    grid-template-rows: 250px 350px;
+    grid-template-columns: 1.7fr 3fr;
+    /*Taille des colonnes*/
+    grid-template-areas: "meuble5 meuble7" "meuble6 meuble7";
+    grid-column-gap: 20px;
+    /*Espace entre colonne*/
+    grid-row-gap: 20px;
+    /*Espace entre ligne*/
 }
 
 /*DIV GRID ---------------*/
+
 #meuble5 {
     grid-area: meuble5;
     background-color: #c6e6a1;
@@ -377,13 +368,18 @@ body {
 }
 
 
-
 /*------------MEUBLE 5 DESIGN TEXTE ----------*/
+#meuble5 img{
+    width: 20%;
+}
 
 /*------------MEUBLE 6 DESIGN TEXTE ----------*/
 
 
 /*------------MEUBLE 7 DESIGN TEXTE ----------*/
+
+/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------Categories--------*/
 
@@ -410,17 +406,18 @@ h1 {
     font-size: 1.5rem;
 }
 
-.partners div {
+.partners {
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    
+    display: grid;
+    grid-template-columns : 1fr repeat(6,2fr) 1fr;
 }
+
 
 .fleche img {
     /*Gardes les proportions*/
-    width: 10%;
+    width: 1%;
+    height: auto;
     -webkit-filter: invert(50%);
 }
 
