@@ -251,6 +251,8 @@ body {
 }
 
 #meuble2 .informations__meubles {
+    width: 285px;
+    height: 600px;
     color: white;
     margin-left: 7%;
 }
