@@ -175,11 +175,12 @@ body {
 /*--------------------------Produits--------------------------*/
 
 
-/*--------Produit Grid 1--------*/
-
-.products-grid .produit__partie__1 div {
-    position: relative;
+.products-grid{
     overflow: hidden;
+}
+
+.products-grid .produit__partie__1 {
+    position: relative;
     /*Grid*/
     display: grid;
     grid-auto-rows: 291px;
@@ -191,7 +192,8 @@ body {
     grid-row-gap: 20px;
 }
 
-/*Camille*/
+/*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
+
 .produit__partie__1 img {
     position: absolute;
     z-index: 0;
@@ -227,6 +229,14 @@ body {
 
 /*------------MEUBLE 2 DESIGN TEXTE ----------*/
 
+
+.acheter{
+    text-transform: uppercase;
+}
+#meuble2 img{
+    left:-50%;
+}
+
 #meuble2 .informations__meubles {
     border: solid 1px red;
     display: block;
@@ -238,26 +248,50 @@ body {
 
 #meuble2 .informations__meubles img {
     -webkit-filter: invert(100%);
-    height: 5%;
+    height: 3%;
     padding: 5px;
     border-radius: 60%;
     border: solid 1px black;
+     top:14.7%;
+     left:23%;
 }
 
 #meuble2 .price {
     color: white;
+    text-align: center;
+}
+
+#meuble2 #bleu{
+     border-radius: 100%;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    background: #62c5de;
     height: 130px;
     width: 130px;
-    border: solid 1px red;
-    margin-left: 40%;
-    margin-top: -60%;
-    background: #62c5de;
-    text-align: center;
-    border-radius: 50%;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 50%;
+    top:-30%;
+    left:35%;
 }
+
+#meuble2 #entete{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight:500;
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+    height:30px;
+}
+
+#meuble2 h3{
+    width:150px;
+    height:60px;
+}
+
+#meuble2 .acheter {
+    font-size:12px;
+}
+
+
+
 /*------------MEUBLE 3 DESIGN TEXTE ----------*/
 
 
@@ -281,13 +315,13 @@ body {
 
 
 .meuble1__img {
-    width: 150%;
+    width:70%;
     margin-left: -35px;
     margin-top: -20px;
 }
 
 .meuble2__img img {
-    margin-left: -130px;
+    
 }
 
 .meuble3__img {
@@ -301,7 +335,7 @@ body {
     margin-left: 35px;
 }
 
-/*Camille*/
+/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------Produit Grid 1--------*/
 .produit__partie__2 {
@@ -345,7 +379,6 @@ body {
 
 
 /*------------MEUBLE 5 DESIGN TEXTE ----------*/
-
 
 /*------------MEUBLE 6 DESIGN TEXTE ----------*/
 
