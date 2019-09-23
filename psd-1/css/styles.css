@@ -181,7 +181,7 @@ body {
 
 
 /*--------------------------Produits--------------------------*/
-.products-grid img {
+.meuble {
     position: absolute;
     z-index: 0;
 }
@@ -238,7 +238,7 @@ body {
 }
 
 /*------------MEUBLE 1 DESIGN TEXTE ----------*/
-.meuble1__img {
+#meuble1 img {
     margin-left: -35px;
     margin-top: -20px;
 }
@@ -303,7 +303,7 @@ body {
 
 
 /*------------MEUBLE 3 DESIGN TEXTE ----------*/
-.meuble3__img {
+#meuble3 img {
     width: 130%;
     margin-top: -25px;
 }
@@ -311,7 +311,7 @@ body {
 
 
 /*------------MEUBLE 4 DESIGN TEXTE ----------*/
-.meuble4__img {
+#meuble4 img {
     width: 125%;
     margin-top: 70px;
     margin-left: 35px;
@@ -377,7 +377,9 @@ body {
 
 
 /*------------MEUBLE 5 DESIGN TEXTE ----------*/
-
+#meuble5 img{
+    width: 20%;
+}
 
 /*------------MEUBLE 6 DESIGN TEXTE ----------*/
 
