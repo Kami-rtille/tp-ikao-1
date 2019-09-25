@@ -55,13 +55,13 @@ Optimisation CSS :
                 <nav class="pre-header__coords">
                     <!-- Téléphone -->
                     <div class="btn-grey phone">
-                        <img id="tel" src="icones/icones-svg/phone-receiver.svg" alt="phone">
+                        <div class="icone tel"></div>
                         <span> +33101010101</span>
                     </div>
 
                     <!-- Mail -->
                     <div class="mail">
-                        <img id="mail" src="icones/icones-png/mail.png" alt="mail">
+                        <div class="icone enveloppe"></div>
                         <span> info@ikao.com</span>
                     </div>
                 </nav>
@@ -223,11 +223,30 @@ Optimisation CSS :
 
         <section class="categories">
             <!-- horloge -->
-            <img id="horloge" src="images/meubles/horloges.png" alt="horloge">
+            <div>
+                <img class="meuble" id="horloge" src="images/meubles/horloges.png" alt="horloge">
+                <p>Décoration</p>
+                <p>Horloges</p>
+                <p>Voir</p>
+                <a><img src="icones/icones-svg/next.svg"></a>
+            
+            </div>
             <!-- table basse -->
-            <img src="images/meubles/tablebase.jpg" alt="tablebasse">
+            <div>
+                <img class="meuble" id="tablebasse" src="images/meubles/tablebase.jpg" alt="tablebasse">
+                <p>Table basses</p>
+                <p>Palettes paillettes</p>
+                <p>Voir</p>
+                <a><img src="icones/icones-svg/next.svg"></a>
+            </div>
             <!-- lampes -->
-            <img src="images/meubles/lampes.png" alt="lampes">
+            <div>
+                <img class="meuble" id="lampes" src="images/meubles/lampes.png" alt="lampes">
+                <p>Lampes</p>
+                <p>Que la lumière soit</p>
+                <p>Voir</p>
+                <a><img src="icones/icones-svg/next.svg"></a>
+                </div>
         </section>
 
         <section class="best-products">
@@ -242,15 +261,17 @@ Optimisation CSS :
         <!-- logos des partenaires (suedois mais pas que) -->
         <h1>Suédois et pas que ...</h1>
 
-        <div class="fleche avant"><img src="icones/icones-svg/next.svg" /></div>
-        <div><img src="images/logos/logo1.jpg" /></div>
-        <div><img src="images/logos/logo2.jpg" /></div>
-        <div><img src="images/logos/logo3.jpg" /></div>
-        <div><img src="images/logos/logo4.jpg" /></div>
-        <div><img src="images/logos/logo5.jpg" /></div>
-        <div><img src="images/logos/logo6.jpg" /></div>
-        <div class="fleche apres_inverse"><img src="icones/icones-svg/next.svg" /></div>
-
+        <div>
+            <img class="fleche avant" src="icones/icones-svg/next.svg" />
+            <div><img src="images/logos/logo1.jpg" /></div>
+            <div><img src="images/logos/logo2.jpg" /></div>
+            <div><img src="images/logos/logo3.jpg" /></div>
+            <div><img src="images/logos/logo4.jpg" /></div>
+            <div><img src="images/logos/logo5.jpg" /></div>
+            <div><img src="images/logos/logo6.jpg" /></div>
+            <img class="fleche apres_inverse" src="icones/icones-svg/next.svg" />
+        </div>
+        
     </div>
 
     <footer>
@@ -258,25 +279,25 @@ Optimisation CSS :
             <div class="advantages-footer">
                 <!-- livraison offerte, support, carte cadeaux, etc -->
                 <div class="livraison">
-                    <img src="icones/icones-png/plane.png" alt="avion">
+                    <div id="avion"></div>
                     <h2>Livraison offerte</h2>
                     <span>Pour toute commande</span>
                 </div>
 
                 <div class="support">
-                    <img src="icones/icones-png/help-lifeguard-symbol.png" alt="bouée">
+                    <div id="bouée"></div>
                     <h2>Support 24/7</h2>
                     <span>Un problème ? Pas de problème</span>
                 </div>
 
                 <div class="cado">
-                    <img src="icones/icones-png/dropbox-logo.png" alt="drop">
+                    <div id="drop"></div>
                     <h2>Cartes cadeaux</h2>
                     <span>Pour faire plaisir</span>
                 </div>
 
                 <div class="securité">
-                    <img src="icones/icones-png/paper-bill.png" alt="dollar">
+                    <div id="dollar"></div>
                     <h2>Sécurité</h2>
                     <span>Paiement 100% sécurisé</span>
                 </div>
@@ -286,23 +307,23 @@ Optimisation CSS :
             <div class="main-footer">
                 <!-- liens, logo, newsletter etc -->
                 <div class="company-footer">
-                    <div id="info"><img src="images/logos/logo.png" alt="Logo IKAO">
-                        <span>Les meubles Ikea, mais en mieux</span>
+                    
+                        <div class="ikao"></div>
+                        <p>Les meubles Ikea, mais en mieux</p>
+
+                    <div id="phone">
+                        <div class="icone lieu"></div>
+                        <p>Quelque part en France, près de Lens</p>
                     </div>
 
                     <div id="phone">
-                        <img src="icones/icones-png/placeholder-filled-point.png" alt="lieu">
-                        <span>Quelque part en France, près de Lens</span>
+                        <div class="icone tel"></div>
+                        <p>+33030030303</p>
                     </div>
 
-                    <div id="phone">
-                        <img src="icones/icones-png/phone-receiver.png" alt="phone">
-                        <span>+33030030303</span>
-                    </div>
-
-                    <div id="mail">
-                        <img src="icones/icones-png/mail.png" alt="mail">
-                        <span>info@Ikao.com</span>
+                    <div class="mail">
+                        <div class="icone enveloppe"></div>
+                        <p>info@Ikao.com</p>
                     </div>
                 </div>
 

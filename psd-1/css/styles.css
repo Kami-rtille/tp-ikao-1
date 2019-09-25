@@ -53,7 +53,6 @@ body {
     justify-content: space-between;
 }
 
-
 /*---------COORDONNEE et COMPTE-------------------------------*/
 
 .pre-header__coords div,
@@ -64,16 +63,6 @@ body {
 
 .btn-grey {
     background-color: #3f3e43;
-}
-
-#tel {
-    -webkit-filter: invert(50%);
-    margin-right: 3px;
-}
-
-#mail {
-    -webkit-filter: invert(50%);
-    margin-right: 3px;
 }
 
 .btn-grey phone {
@@ -91,6 +80,23 @@ body {
     height: 20px;
 }
 
+/*--------Icônes--------*/
+.icone {
+    width: 25px;
+    height: 25px;
+    -webkit-filter: invert(50%);
+    margin-right: 3px; 
+}
+
+.tel{
+    background: url("../icones/icones-svg/phone-receiver.svg") no-repeat;
+    background-size: contain;
+}
+
+.enveloppe{
+    background: url("../icones/icones-svg/mail.svg") no-repeat;
+    background-size: contain;
+}
 
 /*--------Main Header--------*/
 
@@ -387,23 +393,54 @@ body {
 
 /* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*--------------------------Produits selection--------------------------*/
+.products-selection nav {
+    margin: 30px 0px 30px 0px;
+    text-transform: uppercase;
+}
+.products-selection a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
 
-/*--------Categories--------*/
+.products-selection span{
+    margin: 0px 10px 0px 10px;
+} 
 
+/*--------------------------Categories--------------------------*/
+.categories div {
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    height: 200px;
+
+}
 .categories {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: aliceblue;
 }
 
 .categories img {
-    width: 30%;
+    width: 100%;
     height: auto;
-    flex: 1;
 }
 
+#horloge{
+    width: 100%;
+    margin-top: -30px;
+}
+
+#tablebasse{
+    width: 150%;
+}
+
+#lampes{
+    width: 150%;
+}
 
 /*--------------------------Partenaires--------------------------*/
 
@@ -413,17 +450,28 @@ h1 {
     font-size: 1.5rem;
 }
 
-.partners {
+.partners{
     position: relative;
     overflow: hidden;
-    display: grid;
-    grid-template-columns : 1fr repeat(6,2fr) 1fr;
+    margin-bottom: 50px;
 }
 
 
-.fleche img {
+.partners div{
+    display: grid;
+    grid-template-columns : 1fr repeat(6,3fr) 1fr;
+}
+
+/*--------Fleches--------*/
+.parteners img{
+    display: flex;
+    align-items: center;
+    align-content: center;   
+}
+
+.fleche {
     /*Gardes les proportions*/
-    width: 1%;
+    width: 20%;
     height: auto;
     -webkit-filter: invert(50%);
 }
@@ -444,10 +492,71 @@ footer {
 
 
 /*--------------------------Avantages--------------------------*/
+.advantages-footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    color: #353535;
+    padding: 40px 0px 40px 0px;
+    border-bottom: 5px solid red;
+}
 
+.advantages-footer div div{
+    width: 40px;
+    height: 40px;
+    -webkit-filter: invert(50%);
+}
+
+/*--------Icônes--------*/
+#bouée{
+    background: url("../icones/icones-svg/help-lifeguard-symbol.svg") no-repeat;
+    background-size: contain;
+}
+
+#drop{
+    background: url("../icones/icones-svg/dropbox-logo.svg") no-repeat;
+    background-size: contain;
+}
+
+#dollar{
+    background: url("../icones/icones-svg/paper-bill.svg") no-repeat;
+    background-size: contain;
+}
+
+#avion{
+    background: url("../icones/icones-svg/plane.svg") no-repeat;
+    background-size: contain;
+}
 
 /*--------------------------Footer Final--------------------------*/
+.main-footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
 
+.company-footer div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*--------Icônes--------*/
+.ikao{
+    width: 230px;
+    height: 70px;
+    background: url("../images/logos/logo.png") no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+.lieu {
+    background: url("../icones/icones-svg/placeholder-filled-point.svg") no-repeat;
+    background-size: contain;
+}
 
 /*--------Copyright--------*/
 
