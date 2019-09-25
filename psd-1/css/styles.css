@@ -193,8 +193,9 @@ body {
 }
 
 .acheter {
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
+    color:white;
 }
 
 /*--------Produit Grid 1--------*/
@@ -233,21 +234,63 @@ body {
     background-color: #f8f8f8;
 }
 
+
+#entete{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
 /*------------MEUBLE 1 DESIGN TEXTE ----------*/
+
+
 #meuble1 img {
-    margin-left: -35px;
-    margin-top: -20px;
+    width:143%;
+    position: absolute;
+}
+
+#meuble1 #entete{
+position: relative;
+text-decoration: none;
+font-size:15px;
+margin-top:40%;
+background-color: #474747;
+width:50%;
+padding: 1%;
+}
+
+#meuble1 #nouvelle{
+    font-size:60px;
+    font-weight: bold;
+}
+
+#meuble1 #coll{
+    font-size:50px;
+    font-weight:lighter;
 }
 
 #meuble1 a {
     text-decoration: none;
     color: white;
+   }
+
+#meuble1 #texteclassique{
+     font-family: 'Montserrat', sans-serif;
+     padding-top:2px;
+}
+
+#meuble1 .price{
+    margin-top:10px;
+
 }
 
 /*------------MEUBLE 2 DESIGN TEXTE ----------*/
 
 #meuble2 img {
     left: -50%;
+    position: absolute;
 }
 
 #meuble2 .informations__meubles {
@@ -257,29 +300,43 @@ body {
     margin-left: 7%;
 }
 
-#meuble2 .informations__meubles img {
+#meuble2 #next {
     -webkit-filter: invert(100%);
     height: 3%;
     padding: 5px;
     border-radius: 60%;
     border: solid 1px black;
-    top: 14.7%;
-    left: 23%;
+    top: 17.5%;
+    left: 27%;
 }
 
 #meuble2 .price {
+    position: absolute;
     color: white;
     text-align: center;
+    top:60%;
+    left:36%;
+    z-index:10;
+}
+
+#meuble2 #petitprice {
+    position: relative;
+    color: white;
+    text-align: center;
+    top:-25%;
+    left:8%;
+    z-index:10;
 }
 
 #meuble2 #bleu {
+    position: relative;
     border-radius: 100%;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     background: #62c5de;
     height: 130px;
     width: 130px;
-    top: -30%;
+    top:-32%;
     left: 35%;
 }
 
@@ -293,31 +350,123 @@ body {
 }
 
 #meuble2 h3 {
-    width: 150px;
+    width: 220px;
     height: 60px;
+    font-size:25px;
+
 }
 
+#meuble2 .acheter{
+    position: relative;
+    padding-top:15px;
+}
 
 /*------------MEUBLE 3 DESIGN TEXTE ----------*/
 #meuble3 img {
     width: 130%;
     margin-top: -25px;
+    position: absolute;
 }
 
+#meuble3 h3{
+    font-size:25px;
+    color:black;
+    letter-spacing: 0px;
+}
 
+#meuble3 
+{
+    font-size:15px;
+    font-weight:bold;
+    letter-spacing: 3px;
+}
+#meuble3 .price{
+    color:darkred;
+    font-size:25px;
+    margin-bottom: 5px;
+    margin-top:55%;
+    margin-left:50%;
+    letter-spacing: 0px;
+    font-weight: normal;
+}
 
+#meuble3 a{
+    text-decoration:none;
+}
+
+#meuble3 .acheter{
+        background-color: #000000;
+        width:40%;
+        padding: 2px;
+        text-align: center;
+        margin-left: 48%;
+        font-weight: normal;
+        letter-spacing: 0px;
+}
 /*------------MEUBLE 4 DESIGN TEXTE ----------*/
 #meuble4 img {
     width: 125%;
     margin-top: 70px;
     margin-left: 35px;
+    position: absolute;
+    z-index:0;
 }
 
+#meuble4 h3{
+    position: relative;
+    top:10%;
+    left:10%;
+    color: #222222;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+#meuble4 #next{
+    padding: 5px;
+    border-radius: 60%;
+    border: solid 1px black;
+    margin-left: 60%;
+    margin-top: 50%;
+    z-index:1;
+}
+
+#meuble4 a img{
+    width:7%;
+}
+#meuble4 .petitprice{
+    color:grey;
+    font-size:15px;
+    position: relative;
+    text-decoration-line: line-through;
+    top:45%;
+    left:10%;
+    z-index:10;
+
+}
+
+#meuble4 .price{
+    color:#2c2c54;
+    font-size:20px;
+    position: relative;
+    top:47%;
+    left:10%;
+    font-size: 25px;
+
+}
+
+#meuble4 .acheter{
+    position: relative;
+    top:55%;
+    left:10%;
+color:#2c2c54;
+z-index:1;
+}
 /*---------------PRIX------------------*/
 
 .price {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #petitprice {
