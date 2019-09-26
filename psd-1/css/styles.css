@@ -221,17 +221,16 @@ body {
 
 .entete {
     letter-spacing: 3px;
-    text-transform: uppercase;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
 
-.next{
+.next {
     height: 4%;
     padding: 5px;
     border-radius: 60%;
-    border: solid 1px black;    
+    border: solid 1px black;
 }
 
 h3 {
@@ -240,6 +239,7 @@ h3 {
     text-transform: uppercase;
     line-height: 30px;
 }
+
 
 /*--------Produit Grid 1--------*/
 
@@ -258,6 +258,9 @@ h3 {
     grid-row-gap: 20px;
 }
 
+.produit__partie__1{
+    text-transform: uppercase;
+}
 
 /*DIV GRID ---------------*/
 
@@ -278,18 +281,18 @@ h3 {
     background-color: #f8f8f8;
 }
 
+
 /*------------MEUBLE 1 DESIGN TEXTE ----------*/
 
 #meuble1 img {
     width: 143%;
 }
 
-#design{
+#design {
     margin-top: 40%;
     background-color: #474747;
     padding: 1%;
 }
-
 
 .coll {
     font-size: 50px;
@@ -301,7 +304,8 @@ h3 {
     font-weight: bold;
 }
 
-#meuble1 a, #meuble7 a {
+#meuble1 a,
+#meuble7 a {
     text-decoration: none;
     color: white;
 }
@@ -312,6 +316,7 @@ h3 {
 
 
 /*------------MEUBLE 2 DESIGN TEXTE ----------*/
+
 #meuble2 img {
     left: -50%;
 }
@@ -353,7 +358,6 @@ h3 {
     top: -32%;
     left: 35%;
 }
-
 
 #meuble2 h3 {
     width: 220px;
@@ -428,7 +432,6 @@ h3 {
     z-index: 1;
 }
 
-
 #meuble4 .petitprice {
     color: grey;
     font-size: 15px;
@@ -472,7 +475,9 @@ h3 {
     margin-top: 130%;
 }
 
+
 /*DIV GRID ---------------*/
+
 
 /*--------Produit Grid 2--------*/
 
@@ -537,7 +542,9 @@ h3 {
 
 /* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
 
-
+.homepage section{
+    margin: 45px 0px 45px 0px;
+}
 /*--------------------------Produits selection--------------------------*/
 
 .products-selection nav {
@@ -558,9 +565,14 @@ h3 {
 
 /*--------------------------Categories--------------------------*/
 
-.categories div {
-    overflow: hidden;
+.categories div p,
+.categories div a {
     position: relative;
+}
+
+.categories div {
+    position: relative;
+    overflow: hidden;
     flex: 1;
     height: 200px;
 }
@@ -570,10 +582,9 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: aliceblue;
 }
 
-.categories img {
+.categories .meuble {
     width: 100%;
     height: auto;
 }
@@ -652,17 +663,17 @@ footer {
     align-items: center;
     color: #353535;
     padding: 40px 0px 40px 0px;
-    border-bottom: 5px solid red;
+    border-bottom: 1px solid #e0e0e0;
 }
+
+
+/*--------Icônes--------*/
 
 .advantages-footer div div {
     width: 40px;
     height: 40px;
     -webkit-filter: invert(50%);
 }
-
-
-/*--------Icônes--------*/
 
 #bouée {
     background: url("../icones/icones-svg/help-lifeguard-symbol.svg") no-repeat;
@@ -718,6 +729,36 @@ footer {
     background-size: contain;
 }
 
+/*--------------Newsletter-------------*/
+/*--------Réseaux sociaux--------*/
+
+.tw {
+    background: url("../icones/icones-svg/twitter-logo-silhouette.svg") no-repeat;
+    background-size: contain;
+}
+
+.fb {
+    background: url("../icones/icones-svg/facebook-logo.svg") background-size: contain;
+}
+
+.gg {
+    background: url("../icones/icones-svg/google-plus.svg") no-repeat;
+    background-size: contain;
+}
+
+.in {
+    background: url("../icones/icones-svg/linkedin-logo.svg") no-repeat;
+    background-size: contain;
+}
+
+.ws {
+    background: url("../icones/icones-svg/whatsapp.svg") no-repeat;
+    background-size: contain;
+}
+
+
+/*--------------------------Sub Footer--------------------------*/
+
 
 /*--------Copyright--------*/
 
@@ -740,6 +781,8 @@ footer {
 .sub-footer__payments a {
     text-decoration: none;
 }
+
+.sub-footer__payments a:hover {}
 
 .sub-footer__payments img {
     margin-left: 15px;
