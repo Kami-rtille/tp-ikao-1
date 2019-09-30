@@ -539,9 +539,6 @@ h3 {
     width: 200%;
 }
 
-
-/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
-
 .homepage section{
     margin: 45px 0px 45px 0px;
 }
@@ -602,6 +599,8 @@ h3 {
     width: 150%;
 }
 
+/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------Partenaires--------------------------*/
 
@@ -617,7 +616,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.partners div {
+.partners > div {
     display: grid;
     grid-template-columns: 1fr repeat(6, 3fr) 1fr;
 }
@@ -625,8 +624,9 @@ h1 {
 
 /*--------Fleches--------*/
 
-.parteners img {
+.parteners .fleche {
     display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
@@ -665,7 +665,6 @@ footer {
     padding: 40px 0px 40px 0px;
     border-bottom: 1px solid #e0e0e0;
 }
-
 
 /*--------Icônes--------*/
 
