@@ -25,6 +25,13 @@ body {
     margin-left: -360px;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
 
 /*--------------------------Header--------------------------*/
 
@@ -37,6 +44,7 @@ body {
     background-color: #282828;
     margin: 0px;
     text-align: center;
+    padding: 0;
 }
 
 .pre-header div,
@@ -44,16 +52,17 @@ body {
     /*Affichage Flex*/
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
     font-size: 0.9rem;
-}
-
-.pre-header div {
     justify-content: space-between;
 }
 
-
+.pre-header div div:hover{
+    background-color: #3f3e43;
+    text-decoration: none;
+}
 /*---------COORDONNEE et COMPTE-------------------------------*/
 
 .pre-header__coords div,
@@ -72,7 +81,6 @@ body {
 }
 
 .pre-header a {
-    text-decoration: none;
     color: #a1a1a1;
 }
 
@@ -145,7 +153,6 @@ body {
 
 .main-header__menu a,
 #panier-titre {
-    text-decoration: none;
     text-transform: uppercase;
     color: #000000;
     font-size: 1rem;
@@ -599,6 +606,81 @@ h3 {
 /* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+.produts-list{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.selection-list {
+    background-position: center top;
+    width: 100%;
+    position: relative;
+    padding-top : 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.products-hover {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    bottom: -100px;
+    transition: bottom 0.2s ease-in-out; 
+}
+
+.products-hover a:first-child {
+    flex-grow: 1;
+}
+
+.products-hover a{
+    padding: 0px -5px 0px 15px;
+    background-color: aqua;
+}
+
+.selection-list:hover .products-hover {
+    bottom : 0;
+}
+
+.selection-list_legend {
+    position : absolute;
+    left: 30px;
+    top : 250px;
+    z-index: 250;
+    z-index: 250;
+}
+
+/* Icones */
+ 
+.bombichair{
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/bombichair.png);
+    background-size: cover;
+}
+
+.coeur{
+    background-repeat: no-repeat;
+    background-image: url(../icones/icones-svg/heart.svg);
+    background-size: cover;
+}
+
+.echangerr{
+    background-repeat: no-repeat;
+    background-image: url(../icones/icones-svg/exchange-arrows.svg);
+    background-size: cover;
+}
+
+.products-hover a:hover{
+    color: red;
+    transition: all 0.5s;
+}
+
+
 /*--------------------------Partenaires--------------------------*/
 
 h1 {
@@ -620,19 +702,12 @@ h1 {
 
 
 /*--------Fleches--------*/
-
-.parteners .fleche {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
 .fleche {
     /*Gardes les proportions*/
     width: 20%;
     height: auto;
     -webkit-filter: invert(50%);
+    text-align: center;
 }
 
 .avant {
@@ -641,7 +716,6 @@ h1 {
 
 
 /*-------------------------Footer Principal--------------------------*/
-
 
 /*--------Header Footer--------*/
 
@@ -661,32 +735,38 @@ footer {
     color: #353535;
     padding: 40px 0px 40px 0px;
     border-bottom: 1px solid #e0e0e0;
+    
+}
+
+.advantages-footer div{
+    display: flex;
+    flex-direction: column;
+    padding-left : 50px;
 }
 
 /*--------Icônes--------*/
 
 .advantages-footer div div {
-    width: 40px;
-    height: 40px;
-    -webkit-filter: invert(50%);
+    width: 25px;
+    height: 25px;
 }
 
-#bouée {
+.support {
     background: url("../icones/icones-svg/help-lifeguard-symbol.svg") no-repeat;
     background-size: contain;
 }
 
-#drop {
+.cado {
     background: url("../icones/icones-svg/dropbox-logo.svg") no-repeat;
     background-size: contain;
 }
 
-#dollar {
+.securité {
     background: url("../icones/icones-svg/paper-bill.svg") no-repeat;
     background-size: contain;
 }
 
-#avion {
+.livraison {
     background: url("../icones/icones-svg/plane.svg") no-repeat;
     background-size: contain;
 }
@@ -697,6 +777,7 @@ footer {
 .main-footer {
     padding: 40px 0px 60px 0px;
     color: #a1a1a1;
+    list-style: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -704,11 +785,31 @@ footer {
     align-items: center;
 }
 
+.main-footer p{
+    color: #575757;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .company-footer div {
     display: flex;
     flex-flow: row wrap;
 }
 
+/*--------Menu Footer--------*/
+
+.menu-footer{
+    display: flex;
+}
+
+h4{
+    color: #575757;
+
+}
+
+.menu-footer li a{
+    color: #868686;
+}
 
 /*--------Icônes--------*/
 
@@ -724,7 +825,6 @@ footer {
     background: url("../icones/icones-svg/placeholder-filled-point.svg") no-repeat;
     background-size: contain;
 }
-
 /*--------------Newsletter-------------*/
 /*--------Réseaux sociaux--------*/
 
@@ -772,10 +872,6 @@ footer {
 
 .sub-footer__copyright span {
     color: black;
-}
-
-.sub-footer__payments a {
-    text-decoration: none;
 }
 
 .sub-footer__payments a:hover {}
