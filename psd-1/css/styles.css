@@ -234,7 +234,7 @@ ul{
 
 .next {
     -webkit-filter:invert(100%);
-    height: 4%;
+    height: 20px;
     padding: 5px;
     border-radius: 60%;
     border: solid 1px black;
@@ -354,8 +354,6 @@ h3 {
 #meuble2 #bleu {
     position: relative;
     border-radius: 100%;
-    -moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
     background: #62c5de;
     height: 130px;
     width: 130px;
@@ -368,6 +366,7 @@ h3 {
     height: 60px;
     text-transform: none;
     letter-spacing: normal;
+	font-size:1.5em;
 }
 
 
@@ -448,7 +447,6 @@ h3 {
 
 #meuble4 .price {
     color: #2c2c54;
-    font-size: 20px;
     position: relative;
     top: 47%;
     left: 10%;
@@ -530,19 +528,97 @@ h3 {
 /*------------MEUBLE 5 DESIGN TEXTE ----------*/
 
 #meuble5 .meuble {
-    width: 20%;
+    width: 70%;
+	}
+
+.produit__partie__2 .informations__meubles{
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	align-content: flex-end;
+	width:80%;
+	height:80%;
 }
 
+.informations__meubles span {
+	display: inline-flex;
+	flex-direction: row;
+	width:70%;
+	align-content: center;
+	align-items: flex-end;
+	justify-content: flex-end;
+	height:170%;
+}
+
+#meuble5 .acheter{
+	padding:10px;
+}
+
+#meuble5 .informations__meubles{
+	color:#ffffff;
+	font-size:1.5em;
+}
+
+#meuble5 .next{
+	background-color: #982AB7;
+}
 
 /*------------MEUBLE 6 DESIGN TEXTE ----------*/
+#meuble6 .meuble{
+	width:100%;
+}
 
+#meuble6 .informations__meubles{
+	color:#454545;
+	font-size:1.5em;
+}
 
+#meuble6 .acheter {
+	padding:10px;
+	color:#454545;
+}
+
+#meuble6 .next{
+	filter:invert(0%);
+	background-color: #E0E0E0;
+}
 /*------------MEUBLE 7 DESIGN TEXTE ----------*/
 
 #meuble7 img {
-    width: 200%;
+    width: 160%;
+	
+	margin-left:-40%;
 }
 
+#meuble7{
+	opacity:0.6;
+}
+
+#meuble7 .informations__meubles{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	align-content: flex-start;
+	color:#000000;
+	margin-top:15%;
+}
+
+#meuble7 .entete{
+	margin-bottom:5%;
+}
+
+#meuble7 h3{
+	text-transform: none;
+	font-size:3em;
+}
+
+#meuble7 .coll{
+	font-weight:100;
+}
+
+#meuble7 .texteclassique{
+	margin-top:3%;
+}
 .homepage section{
     margin: 45px 0px 45px 0px;
 }
