@@ -583,6 +583,7 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
 .categories .meuble {
@@ -622,6 +623,12 @@ h3 {
     overflow: hidden;
 }
 
+.selection-list:hover .products-hover{
+    opacity: 1;
+    pointer-events: auto;
+    bottom : 0;
+}
+
 .products-hover {
     position: absolute;
     background-color: white;
@@ -632,32 +639,52 @@ h3 {
     height: 20%;
     bottom: -100px;
     transition: bottom 0.2s ease-in-out; 
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.products-hover icon{
+    flex: 20%
 }
 
 .products-hover a:first-child {
     flex-grow: 1;
 }
 
+
+
 .products-hover a{
     padding: 0px -5px 0px 15px;
-    background-color: aqua;
-}
-
-.selection-list:hover .products-hover {
-    bottom : 0;
 }
 
 .selection-list_legend {
     position : absolute;
-    left: 30px;
-    top : 250px;
-    z-index: 250;
-    z-index: 250;
+    bottom: 0;
+    margin-top: 20px;
 }
 
 /* Icones */
  
 .bombichair{
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/bombichair1.png);
+    background-size: cover;
+}
+
+.marvelouseater{
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/seater.png);
+    background-size: cover;
+}
+
+.chariarmrest{
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/chairarmrests.png);
+    background-size: cover;
+}
+
+.bombichairnewversion{
     background-repeat: no-repeat;
     background-image: url(../images/meubles/bombichair.png);
     background-size: cover;
@@ -680,6 +707,7 @@ h3 {
     transition: all 0.5s;
 }
 
+/*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------Partenaires--------------------------*/
 
@@ -771,6 +799,7 @@ footer {
     background-size: contain;
 }
 
+/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------Footer Final--------------------------*/
 
