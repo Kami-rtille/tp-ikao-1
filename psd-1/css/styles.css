@@ -74,15 +74,6 @@ ul {
     text-align: center;
 }
 
-.btn-grey {
-    background-color: #3f3e43;
-}
-
-.btn-grey phone {
-    width: 300px;
-    background-color: #3f3e43;
-}
-
 .pre-header a {
     color: #a1a1a1;
 }
@@ -179,7 +170,7 @@ ul {
     align-items: center;
     justify-content: space-around;
     background: url("../icones/icones-png/paper-bag.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 25px;
     height: 25px;
 }
@@ -198,6 +189,14 @@ ul {
     font-size: 0.7rem;
     margin-top: 3.5px;
 }
+
+
+
+
+
+
+
+
 
 
 /*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
