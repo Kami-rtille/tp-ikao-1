@@ -37,6 +37,10 @@ ul {
 
 /*--------Pré-Header--------*/
 
+.header-toogle {
+    display: none;
+}
+
 .pre-header {
     color: #a1a1a1;
     background-color: #282828;
@@ -1139,20 +1143,7 @@ h4 {
 /* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*-------------------------- Medias Queries--------------------------
-@media screen and (max-width: 1200px) {
-    .products-grid .produit__partie__1 {
-        grid-template-areas: "meuble1 meuble2" "meuble1 meuble2" "meuble3 meuble4"; 
-    }
-    .produit__partie__2 {
-    display: grid;
-    grid-template-rows: 250px 350px;
-    grid-template-columns: 1.7fr 3fr;
-    grid-template-areas: "meuble5 meuble7" "meuble6 meuble7";
-    }
-} 
-    }
-}*/
+/*-------------------------- Medias Queries--------------------------*/
 
 @media screen and (max-width: 1060px) {
     .advantages-footer div {
@@ -1179,6 +1170,12 @@ h4 {
         grid-template-areas: "meuble5" "meuble6" "meuble7";
         grid-template-columns: 1fr;
     }
+    #meuble1 {
+        height: 100%;
+    }
+    #meuble2 {
+        width: 100%;
+    }
     #meuble7 {
         width: 100%;
     }
@@ -1198,5 +1195,33 @@ h4 {
     }
     .main-header-logo {
         text-align: center;
+    }
+    .header-toogle {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        display: block;
+    }
+    .header-toogle-close {
+        display: none;
+    }
+    .header-menu {
+        max-height: 0px;
+        overflow: hidden;
+        display: block;
+    }
+    .header-menu a {
+        display: block;
+        border-top: solid 1px grey;
+        margin: 0px;
+    }
+    .main-header:target .header-toogle-close {
+        display: inline;
+    }
+    .main-header:target .header-toogle-open {
+        display: none;
+    }
+    .main-header:target .header-menu {
+        max-height: 300px;
     }
 }
