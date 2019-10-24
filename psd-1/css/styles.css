@@ -21,10 +21,6 @@ body {
     width: 1200px;
 }
 
-#chauve {
-    margin-left: -360px;
-}
-
 a {
     text-decoration: none;
 }
@@ -36,9 +32,7 @@ ul {
 
 /*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
 
-
 /*--------------------------Header--------------------------*/
-
 
 /*--------Pré-Header--------*/
 
@@ -58,7 +52,6 @@ ul {
     justify-content: space-between;
 }
 
-
 /* COORDONNEE/COMPTE ---------------*/
 
 .pre-header__coords .coord,
@@ -70,7 +63,6 @@ ul {
 .pre-header a {
     color: #a1a1a1;
 }
-
 
 /* Icônes Header ---------------*/
 
@@ -93,7 +85,6 @@ ul {
     background-repeat: no-repeat;
 }
 
-
 /* Animations ---------------*/
 
 .pre-header__coords .coord:hover,
@@ -101,7 +92,6 @@ ul {
     background-color: #3f3e43;
     text-decoration: none;
 }
-
 
 /*--------Main Header--------*/
 
@@ -121,7 +111,6 @@ ul {
 .main-header nav {
     flex-grow: 0.5;
 }
-
 
 /* RECHERCHE ---------------*/
 
@@ -144,7 +133,6 @@ ul {
     margin: 0px 15px 0px 15px;
     position: relative;
 }
-
 
 /* PANIER ---------------*/
 
@@ -179,8 +167,7 @@ ul {
     margin-top: 3.5px;
 }
 
-
-/*Animations ---------------*/
+/* Animations ---------------*/
 
 .main-header nav a:hover,
 .main-header nav a.active {
@@ -210,7 +197,6 @@ ul {
     width: 30px;
     height: 30px;
 }
-
 
 /*--------------------------Produits--------------------------*/
 
@@ -259,7 +245,6 @@ h3 {
     line-height: 30px;
 }
 
-
 /*--------Produit Grid 1--------*/
 
 .produit__partie__1 div {
@@ -276,7 +261,6 @@ h3 {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
-
 
 /*DIV GRID ---------------*/
 
@@ -296,7 +280,6 @@ h3 {
     grid-area: meuble4;
     background-color: #f8f8f8;
 }
-
 
 /*------------MEUBLE 1 DESIGN TEXTE ----------*/
 
@@ -331,7 +314,6 @@ h3 {
 #meuble1 .price {
     margin-top: 20px;
 }
-
 
 /*------------MEUBLE 2 DESIGN TEXTE ----------*/
 
@@ -383,7 +365,6 @@ h3 {
     font-size: 1.5em;
 }
 
-
 /*------------MEUBLE 3 DESIGN TEXTE ----------*/
 
 #meuble3 img {
@@ -425,7 +406,6 @@ h3 {
     font-weight: normal;
     letter-spacing: 0px;
 }
-
 
 /*------------MEUBLE 4 DESIGN TEXTE ----------*/
 
@@ -475,7 +455,6 @@ h3 {
     z-index: 1;
 }
 
-
 /*---------------PRIX------------------*/
 
 .price {
@@ -490,7 +469,6 @@ h3 {
     text-decoration-line: line-through;
     margin-top: 130%;
 }
-
 
 /*--------Produit Grid 2--------*/
 
@@ -668,7 +646,6 @@ h3 {
     transition: all 0.5s;
 }
 
-
 /*--------------------------Produits selection--------------------------*/
 
 .products-selection nav {
@@ -690,7 +667,6 @@ h3 {
 .products-selection .trierpar {
     color: #a1a1a1;
 }
-
 
 /* Animations ---------------*/
 
@@ -834,18 +810,16 @@ h3 {
     background-size: cover;
 }
 
+/* Animations ---------------*/
 .products-hover a:hover {
     color: red;
     transition: all 0.5s;
 }
 
-/* Animations ---------------*/
-
 .produts-list:hover{
     cursor: pointer;
 }
 /*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 /*--------------------------Partenaires--------------------------*/
 
@@ -943,10 +917,6 @@ footer {
     background-size: contain;
 }
 
-
-/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 /*--------------------------Footer Final--------------------------*/
 
 .main-footer {
@@ -955,6 +925,7 @@ footer {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
+    flex: 1 1 2;
     justify-content: space-between;
     align-content: space-between;
     align-items: center;
@@ -964,6 +935,10 @@ footer {
     color: #575757;
     font-weight: 600;
     font-size: 18px;
+}
+
+.company-footer{
+    flex: 2;
 }
 
 .company-footer div {
@@ -976,6 +951,7 @@ footer {
 
 .menu-footer {
     display: flex;
+    flex: 1;
 }
 
 h4 {
@@ -984,6 +960,14 @@ h4 {
 
 .menu-footer li a {
     color: #868686;
+}
+
+.footer-categories{
+    margin: 0px 45px 0px 45px;
+}
+
+.footer-categories-items li{
+    margin: 15px 0px 15px 0px;
 }
 
 .footer-categories a:hover {
@@ -1008,7 +992,41 @@ h4 {
 
 
 /*--------------Newsletter-------------*/
+.newsletter-footer{
+    text-align: right;
+}
 
+.newsletter-footer p{
+    margin-bottom: 20px;
+}
+
+#social{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#social div{
+    margin: 0px 5px 0px 5px;
+}
+
+.newsletter-footer input[type=text] {
+    color: #696969;
+    padding: 10px;
+    font-weight: bold;
+    width: 130px;
+    border: 2px solid white;
+    border-radius: 40px 0 0 40px;
+}
+
+.newsletter-footer button {
+    background-color: #696969;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin-left: -4px;
+    border-radius: 0 40px 40px 0;
+    border: #696969 2px solid;
+}
 
 /*--------Icônes--------*/
 
@@ -1017,26 +1035,32 @@ h4 {
 
 .tw {
     background: url("../icones/icones-svg/twitter-logo-silhouette.svg") no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .fb {
-    background: url("../icones/icones-svg/facebook-logo.svg") background-size: contain;
+    background: url("../icones/icones-svg/facebook-logo.svg") no-repeat;
+    background-size: cover;
 }
 
 .gg {
     background: url("../icones/icones-svg/google-plus.svg") no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.yt{
+    background: url("../icones/icones-svg/youtube-logo.svg") no-repeat;
+    background-size: cover;
 }
 
 .in {
     background: url("../icones/icones-svg/linkedin-logo.svg") no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .ws {
     background: url("../icones/icones-svg/whatsapp.svg") no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 
@@ -1070,7 +1094,6 @@ h4 {
     height: 35px;
 }
 
-
 /* Animations ---------------*/
 
 .newsletter-footer .icone:hover,
@@ -1081,3 +1104,19 @@ h4 {
 .partners div div:hover {
     opacity: 1;
 }
+
+/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------- Medias Queries--------------------------
+@media screen and (max-width: 1200px) {
+    .products-grid .produit__partie__1 {
+        grid-template-areas: "meuble1 meuble2" "meuble1 meuble2" "meuble3 meuble4"; 
+    }
+    .produit__partie__2 {
+    display: grid;
+    grid-template-rows: 250px 350px;
+    grid-template-columns: 1.7fr 3fr;
+    grid-template-areas: "meuble5 meuble7" "meuble6 meuble7";
+    }
+}
+*/
