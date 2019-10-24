@@ -1180,24 +1180,28 @@ h4 {
         width: 100%;
     }
     .produts-list {
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .fleche{
+    .fleche {
         display: none;
     }
-    .partners >div{
+    .partners >div {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         text-align: center;
     }
 }
 
 @media screen and (max-width: 734px) {
-    .categories, .advantages-footer div {
-    display: block;
+    .categories,
+    .advantages-footer {
+        display: block;
     }
 }
 
 @media screen and (max-width: 500px) {
+    .produts-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .pre-header,
     .main-header nav,
     #panier__texte p {
@@ -1208,8 +1212,6 @@ h4 {
     }
     .header-toogle {
         position: absolute;
-        top: 15px;
-        right: 10px;
         display: block;
     }
     .header-toogle-close {
@@ -1225,13 +1227,13 @@ h4 {
         border-top: solid 1px grey;
         margin: 0px;
     }
-    .main-header:target .header-toogle-close {
+    #main-header:target .header-toogle-close {
         display: inline;
     }
-    .main-header:target .header-toogle-open {
+    #main-header:target .header-toogle-open {
         display: none;
     }
-    .main-header:target .header-menu {
+    #main-header:target .header-menu {
         max-height: 300px;
     }
 }
