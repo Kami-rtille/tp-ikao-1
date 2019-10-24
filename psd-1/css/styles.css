@@ -1182,11 +1182,18 @@ h4 {
     .produts-list {
     grid-template-columns: repeat(2, 1fr);
     }
+    .fleche{
+        display: none;
+    }
+    .partners >div{
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 610px) {
-    .advantages-footer div {
-        display: block;
+@media screen and (max-width: 734px) {
+    .categories, .advantages-footer div {
+    display: block;
     }
 }
 
