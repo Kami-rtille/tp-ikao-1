@@ -1172,12 +1172,15 @@ h4 {
         width: 190%;
     }
     .products-grid .produit__partie__1 {
-    grid-template-areas: "meuble1" "meuble2" "meuble3" "meuble4";
-    grid-template-columns: 1fr;
-}
-    .products-grid .produit__partie__2{
+        grid-template-areas: "meuble1" "meuble2" "meuble3" "meuble4";
+        grid-template-columns: 1fr;
+    }
+    .products-grid .produit__partie__2 {
         grid-template-areas: "meuble5" "meuble6" "meuble7";
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    #meuble7 {
+        width: 100%;
     }
 }
 
