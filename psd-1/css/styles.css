@@ -522,6 +522,7 @@ h3 {
 
 .produit__partie__2 .informations__meubles {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     flex-direction: column;
     align-content: flex-end;
@@ -885,6 +886,8 @@ footer {
 
 .advantages-footer div {
     display: flex;
+        flex-wrap: wrap;
+
     flex-direction: column;
     padding-left: 50px;
 }
@@ -1003,6 +1006,7 @@ h4 {
 #social{
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 #social div{
@@ -1071,6 +1075,7 @@ h4 {
 
 .sub-footer div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
