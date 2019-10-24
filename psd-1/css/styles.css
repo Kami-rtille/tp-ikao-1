@@ -18,7 +18,6 @@ body {
     /* centrage horizontal d'un display block */
     padding-left: 10px;
     padding-right: 10px;
-    width: 1200px;
 }
 
 a {
@@ -1119,4 +1118,24 @@ h4 {
     grid-template-areas: "meuble5 meuble7" "meuble6 meuble7";
     }
 }
-*/
+@media screen and (max-width: 780px){
+    .products-grid .produit__partie__1 {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-areas:
+        "meuble1"
+        "meuble2"
+        "meuble3"
+        "meuble4"
+        
+    }
+}*/
+@media screen and (max-width: 500px){
+    .pre-header,.main-header nav, #panier__texte p{
+        display: none;
+    }
+    .main-header-logo{
+        text-align: center;
+        width: 150px;
+        height: 80px;
+    }
+}
