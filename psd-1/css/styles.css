@@ -36,11 +36,14 @@ ul {
 
 /*--------Pré-Header--------*/
 
-.pre-header__coords a{
+.pre-header {
     color: #a1a1a1;
     background-color: #282828;
     text-align: center;
+}
 
+.pre-header div,
+.pre-header div nav {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -519,7 +522,6 @@ h3 {
 
 .produit__partie__2 .informations__meubles {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
     flex-direction: column;
     align-content: flex-end;
@@ -1001,7 +1003,6 @@ h4 {
 #social{
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
 }
 
 #social div{
@@ -1070,7 +1071,6 @@ h4 {
 
 .sub-footer div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
