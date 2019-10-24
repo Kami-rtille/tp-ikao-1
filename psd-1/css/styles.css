@@ -1156,6 +1156,17 @@ h4 {
         display: flex;
         justify-content: space-around;
     }
+    .main-footer{
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+    .company-footer, .newsletter-footer {
+        flex: 1;
+        justify-content: space-around;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -1185,20 +1196,22 @@ h4 {
     .fleche {
         display: none;
     }
-    .partners >div {
+    .partners > div {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         text-align: center;
     }
 }
 
 @media screen and (max-width: 734px) {
-    .categories,
-    .advantages-footer {
+    .categories {
         display: block;
     }
 }
 
 @media screen and (max-width: 500px) {
+    .footer-categories {
+    margin: 0px 15px 0px 15px;
+    }
     .produts-list {
         grid-template-columns: repeat(1, 1fr);
     }
