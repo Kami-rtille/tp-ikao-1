@@ -36,14 +36,11 @@ ul {
 
 /*--------Pré-Header--------*/
 
-.pre-header {
+.pre-header__coords a{
     color: #a1a1a1;
     background-color: #282828;
     text-align: center;
-}
 
-.pre-header div,
-.pre-header div nav {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -886,8 +883,6 @@ footer {
 
 .advantages-footer div {
     display: flex;
-        flex-wrap: wrap;
-
     flex-direction: column;
     padding-left: 50px;
 }
