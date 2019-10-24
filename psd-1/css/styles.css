@@ -31,7 +31,9 @@ ul {
 
 /*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
 
+
 /*--------------------------Header--------------------------*/
+
 
 /*--------Pré-Header--------*/
 
@@ -51,6 +53,7 @@ ul {
     justify-content: space-between;
 }
 
+
 /* COORDONNEE/COMPTE ---------------*/
 
 .pre-header__coords .coord,
@@ -62,6 +65,7 @@ ul {
 .pre-header a {
     color: #a1a1a1;
 }
+
 
 /* Icônes Header ---------------*/
 
@@ -84,6 +88,7 @@ ul {
     background-repeat: no-repeat;
 }
 
+
 /* Animations ---------------*/
 
 .pre-header__coords .coord:hover,
@@ -91,6 +96,7 @@ ul {
     background-color: #3f3e43;
     text-decoration: none;
 }
+
 
 /*--------Main Header--------*/
 
@@ -110,6 +116,7 @@ ul {
 .main-header nav {
     flex-grow: 0.5;
 }
+
 
 /* RECHERCHE ---------------*/
 
@@ -132,6 +139,7 @@ ul {
     margin: 0px 15px 0px 15px;
     position: relative;
 }
+
 
 /* PANIER ---------------*/
 
@@ -166,6 +174,7 @@ ul {
     margin-top: 3.5px;
 }
 
+
 /* Animations ---------------*/
 
 .main-header nav a:hover,
@@ -196,6 +205,7 @@ ul {
     width: 30px;
     height: 30px;
 }
+
 
 /*--------------------------Produits--------------------------*/
 
@@ -244,6 +254,7 @@ h3 {
     line-height: 30px;
 }
 
+
 /*--------Produit Grid 1--------*/
 
 .produit__partie__1 div {
@@ -254,12 +265,13 @@ h3 {
 .products-grid .produit__partie__1 {
     /*Grid*/
     display: grid;
-    grid-auto-rows: 240px;
+    grid-auto-rows: 291px;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: "meuble1 meuble2 meuble3" "meuble1 meuble2 meuble4";
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
+
 
 /*DIV GRID ---------------*/
 
@@ -279,6 +291,7 @@ h3 {
     grid-area: meuble4;
     background-color: #f8f8f8;
 }
+
 
 /*------------MEUBLE 1 DESIGN TEXTE ----------*/
 
@@ -313,6 +326,7 @@ h3 {
 #meuble1 .price {
     margin-top: 20px;
 }
+
 
 /*------------MEUBLE 2 DESIGN TEXTE ----------*/
 
@@ -364,6 +378,7 @@ h3 {
     font-size: 1.5em;
 }
 
+
 /*------------MEUBLE 3 DESIGN TEXTE ----------*/
 
 #meuble3 img {
@@ -405,6 +420,7 @@ h3 {
     font-weight: normal;
     letter-spacing: 0px;
 }
+
 
 /*------------MEUBLE 4 DESIGN TEXTE ----------*/
 
@@ -454,6 +470,7 @@ h3 {
     z-index: 1;
 }
 
+
 /*---------------PRIX------------------*/
 
 .price {
@@ -468,6 +485,7 @@ h3 {
     text-decoration-line: line-through;
     margin-top: 130%;
 }
+
 
 /*--------Produit Grid 2--------*/
 
@@ -645,6 +663,7 @@ h3 {
     transition: all 0.5s;
 }
 
+
 /*--------------------------Produits selection--------------------------*/
 
 .products-selection nav {
@@ -667,11 +686,13 @@ h3 {
     color: #a1a1a1;
 }
 
+
 /* Animations ---------------*/
 
 .products-selection .trierpar:hover {
     color: black;
 }
+
 
 /*--------------------------Categories--------------------------*/
 
@@ -712,6 +733,7 @@ h3 {
 #lampes {
     width: 150%;
 }
+
 
 /* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -809,16 +831,21 @@ h3 {
     background-size: cover;
 }
 
+
 /* Animations ---------------*/
+
 .products-hover a:hover {
     color: red;
     transition: all 0.5s;
 }
 
-.produts-list:hover{
+.produts-list:hover {
     cursor: pointer;
 }
+
+
 /*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------Partenaires--------------------------*/
 
@@ -916,6 +943,7 @@ footer {
     background-size: contain;
 }
 
+
 /*--------------------------Footer Final--------------------------*/
 
 .main-footer {
@@ -936,7 +964,7 @@ footer {
     font-size: 18px;
 }
 
-.company-footer{
+.company-footer {
     flex: 2;
 }
 
@@ -961,11 +989,11 @@ h4 {
     color: #868686;
 }
 
-.footer-categories{
+.footer-categories {
     margin: 0px 45px 0px 45px;
 }
 
-.footer-categories-items li{
+.footer-categories-items li {
     margin: 15px 0px 15px 0px;
 }
 
@@ -991,20 +1019,21 @@ h4 {
 
 
 /*--------------Newsletter-------------*/
-.newsletter-footer{
+
+.newsletter-footer {
     text-align: right;
 }
 
-.newsletter-footer p{
+.newsletter-footer p {
     margin-bottom: 20px;
 }
 
-#social{
+#social {
     display: flex;
     justify-content: flex-end;
 }
 
-#social div{
+#social div {
     margin: 0px 5px 0px 5px;
 }
 
@@ -1027,6 +1056,7 @@ h4 {
     border: #696969 2px solid;
 }
 
+
 /*--------Icônes--------*/
 
 
@@ -1047,7 +1077,7 @@ h4 {
     background-size: cover;
 }
 
-.yt{
+.yt {
     background: url("../icones/icones-svg/youtube-logo.svg") no-repeat;
     background-size: cover;
 }
@@ -1093,6 +1123,7 @@ h4 {
     height: 35px;
 }
 
+
 /* Animations ---------------*/
 
 .newsletter-footer .icone:hover,
@@ -1104,7 +1135,9 @@ h4 {
     opacity: 1;
 }
 
+
 /* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*-------------------------- Medias Queries--------------------------
 @media screen and (max-width: 1200px) {
@@ -1117,29 +1150,50 @@ h4 {
     grid-template-columns: 1.7fr 3fr;
     grid-template-areas: "meuble5 meuble7" "meuble6 meuble7";
     }
-}
-@media screen and (max-width: 780px){
-    .products-grid .produit__partie__1 {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-areas:
-        "meuble1"
-        "meuble2"
-        "meuble3"
-        "meuble4"
-        
+} 
     }
 }*/
-@media screen and (max-width: 500px){
-    .pre-header,.main-header nav, #panier__texte p{
-        display: none;
+
+@media screen and (max-width: 1060px) {
+    .advantages-footer div {
+        margin-top: 20px;
     }
-    .main-header-logo{
-        text-align: center;
+    .menu-footer div {
+        display: block;
+    }
+    #social {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
-@media screen and (max-width: 1060px){
-   .advantages-footer {
-    padding-top: 20px;
+@media screen and (max-width: 920px) {
+    #meuble1 img {
+        width: 190%;
+    }
+    .products-grid .produit__partie__1 {
+    grid-template-areas: "meuble1" "meuble2" "meuble3" "meuble4";
+    grid-template-columns: 1fr;
 }
+    .products-grid .produit__partie__2{
+        grid-template-areas: "meuble5" "meuble6" "meuble7";
+    grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .advantages-footer div {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pre-header,
+    .main-header nav,
+    #panier__texte p {
+        display: none;
+    }
+    .main-header-logo {
+        text-align: center;
+    }
 }
