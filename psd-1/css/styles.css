@@ -1209,26 +1209,15 @@ h4 {
     }
 }
 
-@media screen and (max-width: 734px) {
-    .categories {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .footer-categories {
-    margin: 0px 15px 0px 15px;
-    }
-    .produts-list {
-        grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 879px) {
+    .main-header .main-header-logo{
+        text-align: center;
+        flex-basis: 70%;
     }
     .pre-header,
     .main-header nav,
-    #panier__texte p {
+    #panier__texte {
         display: none;
-    }
-    .main-header-logo {
-        text-align: center;
     }
     .header-toogle {
         position: absolute;
@@ -1255,5 +1244,20 @@ h4 {
     }
     #main-header:target .header-menu {
         max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .categories {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-categories {
+    margin: 0px 15px 0px 15px;
+    }
+    .produts-list {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
