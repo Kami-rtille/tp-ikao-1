@@ -1216,6 +1216,9 @@ h4 {
         justify-content: space-around;
         text-align: center;
     }
+    .produts-list2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media screen and (max-width:979px) {
@@ -1247,7 +1250,6 @@ h4 {
     }
     .produts-list {
         grid-template-columns: repeat(2, 1fr);
-        padding-top: 80%;
     }
     .fleche {
         display: none;
@@ -1294,11 +1296,18 @@ h4 {
     #main-header:target .header-menu {
         max-height: 300px;
     }
+    .produts-list2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 734px) {
     .categories {
         display: block;
+    }
+    .trucvert {
+        margin-top: -250px;
+        float: left;
     }
 }
 
