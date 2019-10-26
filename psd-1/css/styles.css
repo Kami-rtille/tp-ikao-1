@@ -778,6 +778,11 @@ h3 {
     float: left;
 }
 
+.products-hover .panier-image{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
 
 /* Icones */
 
@@ -834,19 +839,6 @@ h3 {
     background-image: url(../images/meubles/loiretchair.jpg);
     background-size: cover;
 }
-
-.coeur {
-    background-repeat: no-repeat;
-    background-image: url(../icones/icones-svg/heart.svg);
-    background-size: cover;
-}
-
-.echangerr {
-    background-repeat: no-repeat;
-    background-image: url(../icones/icones-svg/exchange-arrows.svg);
-    background-size: cover;
-}
-
 
 /* Animations ---------------*/
 
