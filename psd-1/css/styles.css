@@ -28,6 +28,7 @@ ul {
     list-style-type: none;
 }
 
+
 /*--------------------------Header--------------------------*/
 
 
@@ -665,7 +666,10 @@ h3 {
 
 
 /*--------------------------Produits selection--------------------------*/
+
+
 /*------------ Barre de trie ----------*/
+
 .products-selection nav {
     margin: 30px 0px 30px 0px;
     text-transform: uppercase;
@@ -693,7 +697,9 @@ h3 {
     color: black;
 }
 
+
 /*------------ MEUBLE LIST  ----------*/
+
 .produts-list {
     margin: 0;
     display: grid;
@@ -759,7 +765,7 @@ h3 {
     float: left;
 }
 
-.plusbasstp{
+.plusbasstp {
     margin-top: -190px;
 }
 
@@ -771,6 +777,8 @@ h3 {
     margin-top: -160px;
     float: left;
 }
+
+
 /* Icones */
 
 .bombichair {
@@ -845,13 +853,13 @@ h3 {
 .products-hover a:hover {
     color: gainsboro;
     transition: all 0.5s;
-        -webkit-filter: invert(50%);
-
+    -webkit-filter: invert(50%);
 }
 
 .produts-list:hover {
     cursor: pointer;
 }
+
 
 /*--------------------------Categories--------------------------*/
 
@@ -892,6 +900,7 @@ h3 {
 #lampes {
     width: 150%;
 }
+
 
 /*--------------------------Partenaires--------------------------*/
 
@@ -1181,6 +1190,7 @@ h4 {
     opacity: 1;
 }
 
+
 /*-------------------------- Medias Queries--------------------------*/
 
 @media screen and (max-width: 1060px) {
@@ -1194,25 +1204,25 @@ h4 {
         display: flex;
         justify-content: space-around;
     }
-    .main-footer{
+    .main-footer {
         flex-direction: column;
         text-align: center;
         align-content: center;
         align-items: center;
     }
-    .company-footer, .newsletter-footer {
+    .company-footer,
+    .newsletter-footer {
         flex: 1;
         justify-content: space-around;
         text-align: center;
     }
 }
 
-@media screen and (max-width:979px){
+@media screen and (max-width:979px) {
     .main-header nav a {
-    margin: 0px 5px 0px 5px;
+        margin: 0px 5px 0px 5px;
     }
 }
-
 
 @media screen and (max-width: 920px) {
     #meuble1 img {
@@ -1248,7 +1258,7 @@ h4 {
 }
 
 @media screen and (max-width: 879px) {
-    .main-header .main-header-logo{
+    .main-header .main-header-logo {
         text-align: center;
         flex-basis: 70%;
     }
@@ -1293,7 +1303,7 @@ h4 {
 
 @media screen and (max-width: 500px) {
     .footer-categories {
-    margin: 0px 15px 0px 15px;
+        margin: 0px 15px 0px 15px;
     }
     .produts-list {
         grid-template-columns: repeat(1, 1fr);
