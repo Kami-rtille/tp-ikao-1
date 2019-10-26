@@ -1272,19 +1272,9 @@ h4 {
     .produts-list2 {
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     .header-toogle {
         position: absolute;
         top: 15px;
-        right: 10px;
         display: block;
     }
     .header-toogle-close {
@@ -1329,4 +1319,3 @@ h4 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
