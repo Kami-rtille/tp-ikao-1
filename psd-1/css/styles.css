@@ -28,10 +28,6 @@ ul {
     list-style-type: none;
 }
 
-
-/*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 /*--------------------------Header--------------------------*/
 
 
@@ -152,7 +148,7 @@ ul {
     margin-left: 15px;
 }
 
-#panier-image {
+.panier-image {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -205,7 +201,7 @@ ul {
 }
 
 .recherche:hover,
-#panier-image:hover {
+.panier-image:hover {
     width: 30px;
     height: 30px;
 }
@@ -669,7 +665,7 @@ h3 {
 
 
 /*--------------------------Produits selection--------------------------*/
-
+/*------------ Barre de trie ----------*/
 .products-selection nav {
     margin: 30px 0px 30px 0px;
     text-transform: uppercase;
@@ -697,54 +693,18 @@ h3 {
     color: black;
 }
 
-
-/*--------------------------Categories--------------------------*/
-
-.categories div p,
-.categories div a {
-    position: relative;
-}
-
-.categories div {
-    position: relative;
-    overflow: hidden;
-    flex: 1;
-    height: 200px;
-}
-
-.categories {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 30px;
-}
-
-.categories .meuble {
-    width: 100%;
-    height: auto;
-}
-
-#horloge {
-    width: 100%;
-    margin-top: -30px;
-}
-
-#tablebasse {
-    width: 150%;
-}
-
-#lampes {
-    width: 150%;
-}
-
-
-/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
-
+/*------------ MEUBLE LIST  ----------*/
 .produts-list {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.produts-list2 {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
 }
 
@@ -790,12 +750,14 @@ h3 {
     padding: 0px -5px 0px 15px;
 }
 
-.selection-list_legend {
-    position: absolute;
-    bottom: 0;
-    margin-top: 20px;
+.trucvert {
+    background-color: #b2cc29;
+    color: white;
+    font-weight: 500;
+    padding: 10px 10px;
+    margin-top: -250px;
+    float: left;
 }
-
 
 /* Icones */
 
@@ -839,17 +801,55 @@ h3 {
 /* Animations ---------------*/
 
 .products-hover a:hover {
-    color: red;
+    color: gainsboro;
     transition: all 0.5s;
+        -webkit-filter: invert(50%);
+
 }
 
 .produts-list:hover {
     cursor: pointer;
 }
 
+/*--------------------------Categories--------------------------*/
 
-/*Camille---------------------------------------------------------------------------------------------------------------------------------------*/
+.categories div p,
+.categories div a {
+    position: relative;
+}
 
+.categories div {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    height: 200px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.categories .meuble {
+    width: 100%;
+    height: auto;
+}
+
+#horloge {
+    width: 100%;
+    margin-top: -30px;
+}
+
+#tablebasse {
+    width: 150%;
+}
+
+#lampes {
+    width: 150%;
+}
 
 /*--------------------------Partenaires--------------------------*/
 
@@ -1138,10 +1138,6 @@ h4 {
 .partners div div:hover {
     opacity: 1;
 }
-
-
-/* FIN -----------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 /*-------------------------- Medias Queries--------------------------*/
 
