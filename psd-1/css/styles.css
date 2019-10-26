@@ -1247,6 +1247,7 @@ h4 {
     }
     .produts-list {
         grid-template-columns: repeat(2, 1fr);
+        padding-top: 80%;
     }
     .fleche {
         display: none;
