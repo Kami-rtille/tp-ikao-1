@@ -1271,6 +1271,9 @@ h4 {
     .produts-list2 {
         grid-template-columns: repeat(3, 1fr);
     }
+    .panier {
+        margin-left: 0px;
+    }
     .main-header,
     .main-header > * {
         display: block;
