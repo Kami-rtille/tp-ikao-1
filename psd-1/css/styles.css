@@ -704,7 +704,7 @@ h3 {
 .produts-list2 {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
 }
 
@@ -754,11 +754,23 @@ h3 {
     background-color: #b2cc29;
     color: white;
     font-weight: 500;
-    padding: 10px 10px;
+    padding: 8px 8px;
     margin-top: -250px;
     float: left;
 }
 
+.plusbasstp{
+    margin-top: -190px;
+}
+
+.trucnoir {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    padding: 10px 10px;
+    margin-top: -160px;
+    float: left;
+}
 /* Icones */
 
 .bombichair {
@@ -782,6 +794,36 @@ h3 {
 .bombichairnewversion {
     background-repeat: no-repeat;
     background-image: url(../images/meubles/bombichair.png);
+    background-size: cover;
+}
+
+.puffchair {
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/puffchair.jpg);
+    background-size: cover;
+}
+
+.daddychair {
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/daddychair.jpeg);
+    background-size: cover;
+}
+
+.woodchair {
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/woodchair.jpg);
+    background-size: cover;
+}
+
+.cheerschair {
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/cheerschair.png);
+    background-size: cover;
+}
+
+.loiretchair {
+    background-repeat: no-repeat;
+    background-image: url(../images/meubles/loiretchair.jpg);
     background-size: cover;
 }
 
