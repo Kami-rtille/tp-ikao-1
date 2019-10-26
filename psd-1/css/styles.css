@@ -742,13 +742,8 @@ h3 {
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
-    border: 0.5px solid grey;
 }
 
-.products-hover a {
-    border: 0.5px solid grey;
-    padding: 20px;
-}
 .products-hover a:first-child {
     flex-grow: 0.5;
 }
@@ -779,11 +774,12 @@ h3 {
     float: left;
 }
 
-.products-hover .panier-image{
+.products-hover .panier-image {
     width: 20px;
     height: 20px;
     float: left;
 }
+
 
 /* Icones */
 
@@ -841,11 +837,13 @@ h3 {
     background-size: cover;
 }
 
-.icon-exchange-arrows{
+.icon-exchange-arrows {
     padding-right: 10px,
 }
 
+
 /* Animations ---------------*/
+
 .products-hover a:visited {
     color: black;
 }
