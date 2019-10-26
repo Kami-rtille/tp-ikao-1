@@ -34,7 +34,7 @@ ul {
 
 /*--------Pré-Header--------*/
 
-.header-toogle {
+.header-toggle {
     display: none;
 }
 
@@ -1265,39 +1265,53 @@ h4 {
         flex-basis: 70%;
     }
     .pre-header,
-    .main-header nav,
     #panier__texte {
         display: none;
     }
     .produts-list2 {
         grid-template-columns: repeat(3, 1fr);
     }
-    .header-toogle {
-        position: absolute;
-        top: 15px;
+    .main-header,
+    .main-header > * {
         display: block;
+        position: relative;
     }
-    .header-toogle-close {
+    .header_menu {
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 300ms ease-in-out;
+        animation: none;
+    }
+    .header_menu a {
+        display: block;
+        border-top: gainsboro 1px solid;
+        padding: 10px;
+        text-align: center;
+    }
+    .header_menu a:hover {
+        text-decoration: none;
+    }
+    .main-header nav a:after {
+        left: 0%;
+        margin-bottom: 0px;
+        bottom: 0;
+        height: 0px;
+    }
+    #main-header:target .header_menu {
+        max-height: 300px;
+    }
+    .main-header-close {
         display: none;
     }
-    .header-menu {
-        max-height: 0px;
-        overflow: hidden;
-        display: block;
-    }
-    .header-menu a {
-        display: block;
-        border-top: solid 1px grey;
-        margin: 0px;
-    }
-    #main-header:target .header-toogle-close {
+    .main-header-open {
         display: inline;
     }
-    #main-header:target .header-toogle-open {
-        display: none;
+    #main-header:target .main-header-close {
+        display: inline;
     }
-    #main-header:target .header-menu {
-        max-height: 300px;
+    #main-header:target .main-header-open {
+        display: none;
     }
 }
 
