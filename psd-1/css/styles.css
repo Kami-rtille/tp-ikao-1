@@ -742,6 +742,7 @@ h3 {
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
+    border: 1px solid gainsboro;
 }
 
 .products-hover a:first-child {
@@ -1268,8 +1269,22 @@ h4 {
     #panier__texte {
         display: none;
     }
+    .produts-list2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     .header-toogle {
         position: absolute;
+        top: 15px;
+        right: 10px;
         display: block;
     }
     .header-toogle-close {
@@ -1294,9 +1309,6 @@ h4 {
     #main-header:target .header-menu {
         max-height: 300px;
     }
-    .produts-list2 {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 @media screen and (max-width: 734px) {
@@ -1317,3 +1329,4 @@ h4 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
